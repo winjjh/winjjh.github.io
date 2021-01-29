@@ -1,7 +1,31 @@
-html {
-  background: pink;  
+body {
+  margin: 0;
 }
 
-h1 {
-    color: black;
+ul {
+  list-style-type: none;
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+  background: pink;
+  padding: 20px;
+}
+
+
+.headline {
+  font-size: 5rem;
+  font-family: sans-serif;
+  color: limegreen;
+}
+
+.nav-links {
+  color: black;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.spirits {
+  width: 400px;
 }
