@@ -1,31 +1,121 @@
+@font-face {
+  font-family: "Manrope-Regular";
+  src: url("./assets/Manrope-Regular.woff2") format("woff2");
+}
+
+@Font-face {
+  font-family: "Manrope-Bold";
+  src: url("./assets/Manrope-Bold.woff2") format("woff2");
+}
+
+@Font-face {
+  font-family: "Manrope-SemiBold";
+  src: url(".assets/Manrope-SemiBold.woff2") format("woff2");
+}
+
 body {
-  margin: 0;
+  background-color: #d7f5ff;
+  font-family: "Manrope-regular";
+  font-size: 16px;
+   margin: 0;
 }
 
-ul {
-  list-style-type: none;
-}
 
-.home {
-  width: 100%;
-  height: 100%;
-  background: pink;
+
+.headline {
+  font-size: 2rem;
+  font-family: "Manrope-bold";
+  color:#f5acbd;
   padding: 20px;
 }
 
 
-.headline {
-  font-size: 5rem;
-  font-family: sans-serif;
-  color: limegreen;
+
+
+#nav{
+  list-style: none;
+  height: 40px;
+  padding: 5px 1px;
+  margin: 0;
+  background-color:#f5acbd;
 }
 
-.nav-links {
-  color: black;
-  font-size: 50px;
+#nav li{
+  float: left;
+  position: relative;
+  margin: 5px 30px;
+  padding: 0;
+}
+
+#nav li a{
+  display: block;
+  font-family: "Manrope-bold";
+  font-weight: bold;
+  font-size: 18px;
+  padding: 7px 8px;
+  margin: 0;
+  color: #fff;
+  margin: 0;
   text-decoration: none;
 }
 
-.spirits {
-  width: 400px;
+#nav li:hover >a {
+  background: #f5acbd;
+  color:black;
+  margin: 0;
+  padding: 5px;
+}
+
+#nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 105px;
+  background:#f5acbd;
+  text-align: center;
+  opacity: 0;
+}
+
+#nav li:hover ul {
+  opacity:1;
+}
+
+#nav li:hover ul li{
+  height: 35px;
+  overflow: visible;
+  padding:0;
+}
+#nav ul li {
+  float: none;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+#nav ul a {
+  font-weight:normal;
+  color:cornflowerblue;
+}
+
+#nav ul li:hover  a{
+  background:#d7f5ff;
+  font-weight:bold;
+}
+
+
+body {
+  font-family: "Manrope-bold";
+  font-size: 16px;
+   margin: 0;
+}
+
+.main-image {
+  position: absolute;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
