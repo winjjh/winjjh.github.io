@@ -1,29 +1,47 @@
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jong Hee</title>
-    <meta name="description" content="Welcome to my online home">
-    <meta name="author" content="Jong Hee">
-   
-     <!-- Link to your favicon -->
-    <link rel="shortcut icon" type="image/png" href="./cropped-favicon.png" />
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 
-   <!-- Link to your stylesheet -->
-    <link rel="stylesheet" href="./style.css">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Card Expansion Effect - Demo 1</title>
+	<meta name="description" content="Card Expansion Effect with SVG clipPath" />
+	<meta name="keywords" content="clipPath, svg, effect, layout, expansion, images, grid, polygon" />
+	<meta name="author" content="Claudio Calautti for Codrops" />
+	<!-- Link to your favicon -->
+	<link rel="shortcut icon" type="image/png" href="./cropped-favicon.png" />	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/try-demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/card.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/card-4.css" /> -->
+	<link rel="stylesheet" type="text/css" href="css/pattern.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/pattern-4.css" /> -->
+	<!--[if IE]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script>
+	if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+		var root = document.getElementsByTagName('html')[0];
+		root.setAttribute('class', 'ff');
+	};
+	</script>
 </head>
 
-<body>
-<div class="home">
-    <h1 class="headline">Jong Hee</h1>
-    <img class="main-image" src="./assets/veganism.jpg">
 
-    
-    <ul id="nav">
+<div class="container">
+
+<header class="main">
+    <a href="index.html"><h1 class="headline">Jong Hee</h1></a>
+
+    <div class=navigation-bar>
+        
+    <ul class="nav">
         <li><a href="">Project</a>
         <ul>
-        <li><a href="https://winjjh.github.io/project1_studio/">Project 1</a></li>
-        <li><a href="www.google.com">Project 2</a></li>
+        <li><a href="../project/index.html">Project 1</a></li>
+        <!-- <li><a href="www.google.com">Project 2</a></li> -->
  </ul>
     </li>
 
@@ -31,22 +49,280 @@
         <li><a href="./pages/about.html">About</a></li>
         <li><a href="#">#</a></li>
         <li><a href="#">Lab Portfolio</a>
+
         <ul>
         <li><a href="https://winjjh.github.io/Expression_youth/">Expression</a></li>
-        <li><a href="#">2</a></li>
+        <!-- <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-    </ul>
-</li>
-<li><a href="#">Contact</a></li>
+        <li><a href="#">4</a></li> -->
 </ul>
 
-
-    
-
+<li><a href="#">Contact</a></li>
+</ul>
 </div>
 
-</body>
+<!-- <div class="main-image"></div>
 
+<img class="main-image" src="./assets/veganism.jpg"> -->
+
+<dl class="list">
+        <!-- <dt>Cell.</dt>
+        <dd>+82)1049116790</dd> -->
+        <!-- <dt>Email.</dt> -->
+        <dd>jungj566@newschool.edu</dd>
+        <!-- <dt>Web.</dt>
+        <dd>https://winjjh.github.io/</dd> -->
+    </dl>
+
+	
+
+</header>
+
+
+
+
+
+
+
+
+
+		<div class="content">
+			<!-- trianglify pattern container -->
+			<div class="pattern pattern--hidden"></div>
+			<!-- cards -->
+			<div class="wrapper">
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath1">
+									<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+									<circle class="clip" cx="960" cy="250" r="992"></circle>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="./assets/image1.png"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">project 1</h2>
+								<p class="card__subtitle">Time</p>
+							</div>
+							<div class="card__copy">
+								<div class="meta">
+									<img class="meta__avatar" src="img/authors/3.png" />
+									<span class="meta__author">Jong Hee Jung</span>
+									<span class="meta__date">02/21/2021</span>
+								</div>
+								<p>Project 1</p>
+								<a href="https://winjjh.github.io/project1_studio/"><img class="image3" src="./assets/image1.png"></a>
+								<p>This is first project for core2: interaction Studio<br>
+								We've experiment with user flow<br>
+								This sequence of decisions and actions motivated by a specific task is called a **flow**.<br> 
+								A designer has anticipated every decision point and has provided the physical handles, beeps, button interface, and lights to help you complete your task without frustration.<br>
+							This is interactive flow hat have some flows using various platforms.</p>							
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath2">
+									<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+									<circle class="clip" cx="960" cy="250" r="992"></circle>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath2)" width="1920" height="500" xlink:href="./assets/image2.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title2">Project2</h2>
+								<p class="card__subtitle2">In Praise of Shadow</p>
+							</div>
+							<div class="card__copy">
+								<div class="meta">
+									<img class="meta__avatar" src="img/authors/3.png" />
+									<span class="meta__author">Jong Hee Jung</span>
+									<span class="meta__date">03/15/2021</span>
+								</div>
+								<p>Project 2</p>
+								<a href="https://winjjh.github.io/project2-In-Praise-of-Shadows//"><img class="image3" src="./assets/image2.jpg"></a>
+								<p>Project 2 is about interpretation of the story we've chose. We used the visual language of the webb-hypertext. responsive design, forms, colors, divs-to express the meaning of our selected story.</p>							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath3">
+									<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+									<circle class="clip" cx="960" cy="250" r="992"></circle>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="./assets/image3.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title2">Project 3</h2>
+								<p class="card__subtitle2">Fortune Telling</p>
+							</div>
+							<div class="card__copy">
+								<div class="meta">
+									<img class="meta__avatar" src="img/authors/3.png" />
+									<span class="meta__author">Jong Hee Jung</span>
+									<span class="meta__date">04/23/2021</span>
+								</div>
+								<p>Project 3</p>
+								<a href="https://winjjh.github.io/project3_fortune_telling/"><img class="image3" src="./assets/image3.jpg"></a>
+								<p>Project 3 is about collecting datas and organizing it and to design flexibility for content that we've can't control 
+									and reinterpret external sources of data into narrative experiences.
+									We've experimented with interactions with a collection and connect and use structured content from API (Application Programming Interface)
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+					<div class="card">
+						<div class="card__container card__container--closed">
+							<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+								<defs>
+									<clipPath id="clipPath4">
+										<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+										<circle class="clip" cx="960" cy="250" r="992"></circle>
+									</clipPath>
+								</defs>
+								<image clip-path="url(#clipPath4)" width="1920" height="500" xlink:href="./assets/project4_main.png"></image>
+							</svg>
+							<div class="card__content">
+								<i class="card__btn-close fa fa-times"></i>
+								<div class="card__caption">
+									<h2 class="card__title2">Project 4</h2>
+									<p class="card__subtitle2">Input Output</p>
+								</div>
+								<div class="card__copy">
+									<div class="meta">
+										<img class="meta__avatar" src="img/authors/3.png" />
+										<span class="meta__author">Jong Hee Jung</span>
+										<span class="meta__date">05/05/2021</span>
+									</div>
+									<p>Project 4</p>
+									<a href="https://winjjh.github.io/Project4-to-do-list2/"><img class="project4" src="./assets/project4_main.png"></a>
+									<p>Click image to go to website</p>
+									<img class="project4" src="./assets/project4.png">
+									<p>This is project 4 for core 2: interaction Studio class<br>
+									We experiment with input output using javascript to create unique outputs<br></p>
+									<img class="project4" src="./assets/Project4_2.png">
+									<p>My OUtput Input is about to-do-list and you can priortize your daily list using input and output</p>
+									<img class="project4" src="./assets/Project4_3.png">
+									<p>You can also select schedule</p>
+									<img class="project4" src="./assets/Project4_4.png">
+									<p>And you can also add in your daily to do</p>
+								</div>
+							</div>
+						</div>
+				</div>
+
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath5">
+									<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+									<circle class="clip" cx="960" cy="250" r="992"></circle>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath5)" width="1920" height="500" xlink:href="./assets/interactive_zine.png"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title2">Project 5</h2>
+								<p class="card__subtitle2">Interactive Zine</p>
+							</div>
+							<div class="card__copy">
+								<div class="meta">
+									<img class="meta__avatar" src="img/authors/3.png" />
+									<span class="meta__author">Jong Hee Jung</span>
+									<span class="meta__date">05/05/2021</span>
+								</div>
+								<p>Project 5</p>
+								<a href="https://winjjh.github.io/interactive-zine/"><img class="project4" src="./assets/interactive_zine.png"></a>
+								<p>Click image to go to website</p>
+							</div>
+						</div>
+					</div>
+			</div>
+
+			<div class="card">
+				<div class="card__container card__container--closed">
+					<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+						<defs>
+							<clipPath id="clipPath6">
+								<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+								<circle class="clip" cx="960" cy="250" r="992"></circle>
+							</clipPath>
+						</defs>
+						<image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="./assets/Responsive_website.png"></image>
+					</svg>
+					<div class="card__content">
+						<i class="card__btn-close fa fa-times"></i>
+						<div class="card__caption">
+							<h2 class="card__title">Project 6</h2>
+							<p class="card__subtitle">Responsive Website</p>
+						</div>
+						<div class="card__copy">
+							<div class="meta">
+								<img class="meta__avatar" src="img/authors/3.png" />
+								<span class="meta__author">Jong Hee Jung</span>
+								<span class="meta__date">05/05/2021</span>
+							</div>
+							<p>Project 6</p>
+							<a href="https://winjjh.github.io/responsive-website/"><img class="project4" src="./assets/Responsive_website.png"></a>
+							<p>Click image to go to website</p>
+						</div>
+					</div>
+				</div>
+		</div>
+				<!-- <div class="footer">
+				<div class="introduction">
+					I'm in my second year as a communication design major in Parsons New School.
+					<br>Living in a Korea, Seoul / Us, New York.
+					<br>Interested in UX | UI Design, Computer Science, Interaction Design, 3D Graphics, Branding, Packaging, effect
+					<br>I am also interested in Fine Arts, Installation and German Arts.
+				</div> -->
+			</div>
+				
+			
+						
+			
+	<!-- /container -->
+	
+<!-- footer-->
+
+
+
+
+
+
+
+
+	<!-- JS -->
+	<script src="js/vendors/trianglify.min.js"></script>
+	<script src="js/vendors/TweenMax.min.js"></script>
+	<script src="js/vendors/ScrollToPlugin.min.js"></script>
+	<script src="js/vendors/cash.min.js"></script>
+	<script src="js/Card-circle.js"></script>
+	<script src="js/demo.js"></script>
+</body>
 
 </html>
