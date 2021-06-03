@@ -273,7 +273,7 @@ footer {
   }
   
   .nav ul a {
-    font-size: 18px;
+    font-size: 16px;
     font-weight:normal;
     color:cornflowerblue;
     position: absolute;
@@ -283,7 +283,7 @@ footer {
   
   .nav ul li:hover  a{
     background:#d7f5ff;
-    font-size: 18px;
+    font-size: 16px;
     font-weight:bold;
     position: absolute;
     top: 10%;
@@ -303,7 +303,7 @@ footer {
     position: absolute;
     font-size: 16px;
     width: 100%;
-    left: 80%;
+    left: 75%;
     top: 105%;
     padding: 20px;
     color: rgb(255, 102, 0);;
