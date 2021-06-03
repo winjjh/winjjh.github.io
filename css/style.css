@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "HelveticaNeue";
   src: url("./assets/HelveticaNeue-Medium.woff") format("woff");
 }
@@ -11,7 +11,7 @@
 @Font-face {
   font-family: "HelveticaNeue";
   src: url(".assets/HelveticaNeue-Heavy.woff") format("woff");
-}
+} */
 
 body {
   background-color: #d7f5ff;
@@ -23,7 +23,7 @@ body {
 
 
 .headline {
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   font-family: "HelveticaNeue";
   color:#64c4f5;
   padding: 20px;
@@ -36,8 +36,8 @@ body {
 
 .navigation-bar {
   position: absolute;
-  Top: 7%;
-  left: 20%;
+  Top: 5%;
+  left: 30%;
 }
 
 
@@ -50,7 +50,8 @@ body {
 }
 
 .nav li{
-  float: left;
+  /* float: left; */
+  left: 120%;
   position: relative;
   margin: 5px 30px;
   padding: 0;
@@ -60,8 +61,8 @@ body {
   display: block;
   font-family: "Manrope-bold";
   font-weight: bold;
-  font-size: 18px;
-  padding: 7px 8px;
+  font-size: 12px;
+  padding: ;
   margin: 0;
   color: rgb(255, 102, 0);
   margin: 0;
@@ -109,11 +110,19 @@ body {
 .nav ul a {
   font-weight:normal;
   color:cornflowerblue;
+  position: absolute;
+  top: -97%;
+  right: 80%;
+  font-size: 10px;
 }
 
 .nav ul li:hover  a{
   background:#d7f5ff;
+  font-size: 10px;
   font-weight:bold;
+  position: absolute;
+  top: -97%;
+  right: 80%;
 }
 
 
@@ -123,27 +132,28 @@ body {
    margin: 0;
 }
 
-.main-image {
-  /* position: absolute;
+/* .main-image {
+  position: absolute;
   align-items: center;
   align-content: center;
   width: 100%;
   height: 80%;
   top: 0;
-  left: 0; */
+  left: 0;
   background-image: url("../assets/veganism.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   z-index: -1;
-}
+} */
 
 .list {
   position: absolute;
+  font-size: 12px;
   width: 100%;
-  left: 80%;
   top: 7%;
   color: rgb(255, 102, 0);;
+  visibility: hidden;
 }
 
 .list dt {
@@ -178,3 +188,154 @@ footer {
   /* position: absolute;
   left: -10px; */
 }
+
+@media only screen and (min-width: 767px) {
+
+  .headline {
+    font-size: 2.5rem;
+    font-family: "HelveticaNeue";
+    color:#64c4f5;
+    padding: 20px;
+    position: absolute;
+    margin-left: 20px;
+    top: 4%;
+  }
+
+  .navigation-bar {
+    position: absolute;
+    Top: 10%;
+    left: -15%;
+  }
+
+  .nav{
+    list-style: none;
+    height: 40px;
+    /* padding: 5px 1px; */
+    margin: 0;
+    /* background-color:#f5acbd; */
+  }
+  
+  .nav li{
+    float: left;
+    position: relative;
+    margin: 5px 30px;
+    padding: 0;
+  }
+  
+  .nav li a{
+    display: block;
+    font-family: "Manrope-bold";
+    font-weight: bold;
+    font-size: 18px;
+    padding: 7px 8px;
+    margin: 0;
+    color: rgb(255, 102, 0);
+    margin: 0;
+    text-decoration: none;
+  }
+  
+  .nav li:hover >a {
+    /* background: #f5acbd; */
+    color:black;
+    margin: 0;
+    padding: 5px;
+  }
+  
+  .nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 105px;
+    /* background: #fff; */
+    /* background:#f5acbd; */
+    text-align: center;
+    opacity: 0;
+    border-radius: 1;
+  }
+  
+  .nav li:hover ul {
+    opacity:1;
+  }
+  
+  .nav li:hover ul li{
+    height: 35px;
+    overflow: visible;
+    padding:0;
+  }
+  .nav ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+  }
+  
+  .nav ul a {
+    font-size: 18px;
+    font-weight:normal;
+    color:cornflowerblue;
+    position: absolute;
+    top: 10%;
+    left: -135%;
+  }
+  
+  .nav ul li:hover  a{
+    background:#d7f5ff;
+    font-size: 18px;
+    font-weight:bold;
+    position: absolute;
+    top: 10%;
+    left: -135%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  
+  body {
+    font-family: "Manrope-bold";
+    font-size: 16px;
+     margin: 0;
+  }
+
+  .list {
+    position: absolute;
+    font-size: 16px;
+    width: 100%;
+    left: 80%;
+    top: 105%;
+    padding: 20px;
+    color: rgb(255, 102, 0);;
+    visibility: visible;
+  }
+  
+  .list dt {
+    color: black;
+    float: left;
+    width: 4em;
+  }
+  
+  .list dd {
+    overflow: hidden;
+  }
+  
+  .image3 {
+    width: 80%;
+    height: auto;
+  }
+  
+  .project4 {
+    width: 80%;
+    height: auto;
+  }
+  
+  .introduction {
+    position: absolute;
+    top: 65%;
+    padding: 40px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+ }
