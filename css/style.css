@@ -278,7 +278,7 @@ footer {
     color:cornflowerblue;
     position: absolute;
     top: 10%;
-    left: -135%;
+    left: -152%;
   }
   
   .nav ul li:hover  a{
@@ -287,7 +287,7 @@ footer {
     font-weight:bold;
     position: absolute;
     top: 10%;
-    left: -135%;
+    left: -152%;
     text-align: center;
     align-items: center;
   }
